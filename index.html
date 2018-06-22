@@ -10,14 +10,16 @@
     <link rel="stylesheet" href="assets/css/reset.css">
     <link rel="stylesheet" href="assets/css/style.css">
 
-    <script src="jquery-3.3.1.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="assets/javascript/game.js"></script>
+
 </head>
 
 <body>
 
     <header>
-        <h1> Crystal Collector </h1>
+        <h1 id="click-me"> Crystal Collector </h1>
     </header>
     <div class="mainContent">
 
@@ -39,28 +41,34 @@
 
         <div id="bottomContent">
             <div id="countingBox">
-                <h2> score to hit: <span> x </span> </h2>
+                <h2> Score to Hit:
+                    <span id = "targetNumber"> </span>
+                </h2>
 
 
-                <p> wins: <span> y </span> </p>
-                <p> losses: <span> z </p>
+                <p> Wins:
+                    <span id="wins">  </span>
+                </p>
+                <p> Losses:
+                    <span id="losses">  </p>
 
             </div>
 
             <div id="selectBox">
                 <h3> Your Total Score Is:</h3>
-                <h4> player total score </h4>
+                <p id="currentAmount"> </p>
+                <button id="nextButton"> Next Game </button>
                 <div id="gemBox">
-                    <button>
-                        <img src="assets/images/blueGem.png" alt="blueGem">
+                    <button class="crystal" value = "5">
+                        <img src="assets/images/blueGem.png" alt="blueGem" id="click-me">
                     </button>
-                    <button>
+                    <button class="crystal" value = "7">
                         <img src="assets/images/greenGem.png" alt="greenGem">
                     </button>
-                    <button>
+                    <button class="crystal" value = "10">
                         <img src="assets/images/redGem.png" alt="redGem">
                     </button>
-                    <button>
+                    <button class="crystal" value = "15">
                         <img src="assets/images/whiteGem.png" alt="whiteGem"> </button>
                 </div>
             </div>

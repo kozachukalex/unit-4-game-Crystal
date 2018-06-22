@@ -27,6 +27,14 @@ h1{
     padding: 20px 0;
 }
 
+#nextButton {
+    margin-top: 20px;
+    height: 50px;
+    width: 75px;
+    font-size: 18px;
+    display: none;
+}
+
 #topContent,
 #bottomContent {
     margin: 0 auto;
