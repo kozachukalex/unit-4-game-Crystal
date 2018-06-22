@@ -13,12 +13,27 @@ $(document).ready(function () {
         console.log(targetNumber)
         $("#currentAmount").html(currentScore)
         $("#targetNumber").html(targetNumber)
+        crystalValue()
         $("#wins").html(wins)
         $("#losses").html(losses)
         return targetNumber;
     }
 
     // use a this. function to assign values to each crystal that resets every game
+    function crystalValue() {
+        var values = []
+        for (i = 0; i < 4; i++) {
+            n = Math.round(Math.random() * (12 - 1) + 1)
+            values.push(n)
+            console.log(values);
+
+
+        }
+        $("#blueGem").val(values[0])
+        $("#greenGem").val(values[1])
+        $("#redGem").val(values[2])
+        $("#whiteGem").val(values[3])
+    }
 
     function checkScore() {
         if (currentScore === targetNumber) {
