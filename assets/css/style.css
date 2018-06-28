@@ -1,5 +1,5 @@
 html{
-    min-height: 100vh;
+    height: 100vh;
     box-sizing: border-box;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
@@ -8,16 +8,15 @@ body {
 
     background-image: url(../images/backgroundCave.jpg);
     background-size: cover;
-    background-repeat: no-repeat;
-
-    min-width: 960px;
+    margin: 0 auto;
+    width: 960px;
 
 }
 header{
     background-color: rgba(0,0,0, 0.8);
     color: #fff;
     margin-bottom: 20px;
-    min-width: 960px;
+    width: 960px;
 }
 
 
